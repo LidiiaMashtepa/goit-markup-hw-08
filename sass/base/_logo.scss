@@ -1,0 +1,18 @@
+.logo {
+  @extend %logo;
+  margin-right: 93px;
+  padding: 15px 0px;
+}
+.footer__logo {
+  @extend %logo;
+  margin-bottom: 20px;
+  @media screen and (min-width: 786px) {
+    margin-bottom: 0;
+  }
+}
+.studio {
+  color: #000000;
+}
+.footer__studio {
+  color: $white;
+}

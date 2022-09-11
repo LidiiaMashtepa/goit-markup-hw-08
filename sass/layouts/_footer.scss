@@ -1,0 +1,114 @@
+.footer {
+  background: #2f303a;
+  padding: 60px 0px;
+}
+
+.footer__container {
+  @extend %column-center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+}
+
+.footer__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer__address-container {
+  @extend %column-center;
+  margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+    margin-bottom: 0;
+    align-items: flex-start;
+  }
+}
+
+.footer__link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: $white;
+  transition-property: color;
+  @extend %animated;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.footer-soc {
+  @extend %column-center;
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 100px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
+    margin-right: 93px;
+    margin-bottom: 0;
+  }
+}
+
+.footer-soc__list {
+  @extend %flex-center;
+  column-gap: 10px;
+}
+
+.footer-soc__link {
+  @extend %flex-center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition-property: background-color;
+  @extend %animated;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.footer-soc__svg {
+  fill: $white;
+}
+
+.footer__list {
+  @extend %column-center;
+  @media screen and (min-width: 1200px) {
+    margin-top: 20px;
+    align-items: flex-start;
+  }
+}
+
+.footer__contact {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  transition-property: color;
+  @extend %animated;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.footer-soc__title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white;
+  margin-bottom: 20px;
+}

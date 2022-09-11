@@ -1,0 +1,33 @@
+$title-color: #212121;
+$accent-color: #2196f3;
+$white: #ffffff;
+$bg-gradient: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+
+%animated {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+%column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+%logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
